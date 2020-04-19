@@ -1,0 +1,4 @@
+corpora
+wordnet
+pros_cons
+reuters

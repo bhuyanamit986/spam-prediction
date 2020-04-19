@@ -1,0 +1,17 @@
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="../static/css/site.css">
+    <title>result</title>
+  </head>
+  <body>
+      <h1>{{text.content}}</h1>
+      <div class='results'>
+      	{% if prediction == 1 %}
+      	<h2>This is a Spam.</h2>
+      	{% elif prediction == 0 %}
+      	<h2>This is a Ham.</h2>
+      	{% endif %}
+      </div>
+
+  </body>
+</html>

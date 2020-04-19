@@ -1,0 +1,19 @@
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="../static/css/site.css">
+    <title>{{title}}</title>
+  </head>
+  <body>
+      <h1>{{text.content}}!</h1>
+      <p><span style="font-size:18px">This is the perfect website which could tell you whether your mail is spam or not.</span></p>
+
+	  
+	<div class="ml-container">
+	  <form action="{{ url_for('predict') }}" method = 'POST'>
+	  <p><span style="font-size:12px">Type your text to get your predictions.</span></p>
+	  <p><textarea cols="190" name="comment" rows="20"></textarea></p>
+	  </br>
+	  <p><input name="Enter" type="submit" value="predict" /></p>
+
+  </body>
+</html>
